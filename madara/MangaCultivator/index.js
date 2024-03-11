@@ -9643,9 +9643,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.MangaCultivator = exports.MangaCultivatorInfo = void 0;
 const types_1 = require("@paperback/types");
 const Madara_1 = require("../Madara");
-const DOMAIN = 'https://mangacult.org';
+const DOMAIN = 'https://manhwatop.com/';
 exports.MangaCultivatorInfo = {
-    version: (0, Madara_1.getExportVersion)('0.0.2'),
+    version: (0, Madara_1.getExportVersion)('0.0.3'),
     name: 'MangaCultivator',
     description: `Extension that pulls manga from ${DOMAIN}`,
     author: 'Community',
@@ -9660,9 +9660,6 @@ class MangaCultivator extends Madara_1.Madara {
     constructor() {
         super(...arguments);
         this.baseUrl = DOMAIN;
-        this.chapterEndpoint = 1;
-        this.hasProtectedChapters = true;
-        this.usePostIds = true;
     }
 }
 exports.MangaCultivator = MangaCultivator;
